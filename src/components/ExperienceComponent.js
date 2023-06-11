@@ -6,7 +6,6 @@ import "animate.css/animate.min.css";
 import { Card, Grid } from "@mui/material";
 
 function ExperienceComponent() {
-  console.log(data);
   return (
     <div className="ExperienceComponent">
       <p className="title">Experience</p>

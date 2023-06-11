@@ -10,6 +10,8 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import Box from "@mui/material/Box";
 import TabPanel from "@mui/lab/TabPanel";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
 
 function ProjectComponent() {
   const [value, setValue] = React.useState("1");
@@ -34,27 +36,29 @@ function ProjectComponent() {
             <Grid container className="project_container" lg={12} spacing="12">
               {projects.web_projects.map((key) => (
                 <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                  <Card className="project_card">
-                    <p className="project_title">{key.name}</p>
-                    <p className="project_desc">{key.description}</p>
-                    {key.githubLink != "" ? (
-                      <GitHubIcon
-                        className="github_icon"
-                        onClick={() => {
-                          window.open(key.githubLink, "_blank");
-                        }}
-                      ></GitHubIcon>
-                    ) : null}
+                  <AnimationOnScroll animateIn="animate__zoomIn" duration={2}>
+                    <Card className="project_card">
+                      <p className="project_title">{key.name}</p>
+                      <p className="project_desc">{key.description}</p>
+                      {key.githubLink != "" ? (
+                        <GitHubIcon
+                          className="github_icon"
+                          onClick={() => {
+                            window.open(key.githubLink, "_blank");
+                          }}
+                        ></GitHubIcon>
+                      ) : null}
 
-                    {key.hostedLink != "" ? (
-                      <OpenInNewIcon
-                        className="project_icon"
-                        onClick={() => {
-                          window.open(key.hostedLink, "_blank");
-                        }}
-                      ></OpenInNewIcon>
-                    ) : null}
-                  </Card>
+                      {key.hostedLink != "" ? (
+                        <OpenInNewIcon
+                          className="project_icon"
+                          onClick={() => {
+                            window.open(key.hostedLink, "_blank");
+                          }}
+                        ></OpenInNewIcon>
+                      ) : null}
+                    </Card>
+                  </AnimationOnScroll>
                 </Grid>
               ))}
             </Grid>

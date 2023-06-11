@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/ComponentStyles.scss";
 import { motion } from "framer-motion";
+import { HashLink as Link } from "react-router-hash-link";
 
 function MenuComponent() {
   const [menuCollapse, setMenuCollapse] = useState(true);
@@ -28,11 +29,26 @@ function MenuComponent() {
           >
             Close
           </button>
-          <p>Home</p>
-          <p>About</p>
-          <p>Experience</p>
-          <p>MY PROJECTS</p>
-          <p>LET'S TALK</p>
+
+          <Link to="/#LandingSection">
+            <p>Home</p>
+          </Link>
+
+          <Link to="/#AboutSection">
+            <p>About</p>
+          </Link>
+
+          <Link to="/#ProjectSection">
+            <p>Projects</p>
+          </Link>
+
+          <Link to="/#ExperienceSection">
+            <p>Experience</p>
+          </Link>
+
+          <Link to="/#ContactSection">
+            <p>Let's Talk</p>
+          </Link>
         </div>
       )}
     </div>

@@ -8,6 +8,7 @@ import ThreeModel from "../components/ThreeModel";
 import AboutComponent from "../components/AboutComponent";
 import ProjectComponent from "../components/ProjectComponent";
 import ExperienceComponent from "../components/ExperienceComponent";
+import ContactComponent from "../components/ContactComponent";
 
 function HomePage() {
   const handleResumeButton = () => {
@@ -44,22 +45,21 @@ function HomePage() {
           </motion.div>
         ) : null}
       </div>
-
       <div id="LandingSection">
         <HomeIntroComponent />
       </div>
       <div id="AboutSection">
         <AboutComponent />
       </div>
-
-      <div id="WorkSection">{/* <AboutComponent /> */}</div>
-
       <div id="ProjectSection">
         <ProjectComponent />
       </div>
-
       <div id="ExperienceSection">
         <ExperienceComponent />
+      </div>
+
+      <div id="ContactSection">
+        <ContactComponent />
       </div>
     </div>
   );

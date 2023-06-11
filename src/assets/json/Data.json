@@ -76,19 +76,21 @@
     {
       "positon": "Summer Intern",
       "company": "Elimtus Evaluations Pvt.Ltd",
-      "description": "Developing complete frontend and backend of Interview Platform A multi-user video conferencing platform,along with collaborative code editor functionalities and other relevant functionalities"
+      "description": "Developing complete frontend and backend of Interview Platform A multi-user video conferencing platform,along with collaborative code editor functionalities and other relevant functionalities",
+      "timeline": "May 2023- June 2023"
     },
     {
       "positon": "Junior Backend Developer Intern",
       "company": "Urbano InfoTech",
-      "description": "Experienced in backend development, specialized in Django Rest Framework APIs for various products. Committed to delivering high-quality and efficient solutions"
+      "description": "Experienced in backend development, specialized in Django Rest Framework APIs for various products. Committed to delivering high-quality and efficient solutions",
+      "timeline": "May 2022- June 2022"
     }
   ],
   "vol_experience": [
     {
       "positon": "Lead",
-      "company": "Google Developer Student Clubs",
-      "description": "Led bootcamps, seminars, hackathons, and programs like Android Study Jams and Google Cloud Career Practitioner. Focused on enhancing student learning and providing practical experience in technical domains."
+      "company": "Google Developer Student Clubs VSSUT",
+      "description": "Led bootcamps, seminars, hackathons.Programs like Android Study Jams and Google Cloud Career Practitioner. Focused on enhancing student learning and providing hands-on experience in tech domains."
     },
     {
       "positon": "Member",

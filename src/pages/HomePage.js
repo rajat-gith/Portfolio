@@ -11,7 +11,6 @@ import ExperienceComponent from "../components/ExperienceComponent";
 import ContactComponent from "../components/ContactComponent";
 
 function HomePage() {
-  const [isLoading, setIsLoading] = useState(true);
 
   const handleResumeButton = () => {
     window.open(
@@ -19,23 +18,7 @@ function HomePage() {
     );
   };
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoading(false);
-    };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
-
   const { startShow, setStart } = useContext(AppContext);
-
-  if (isLoading) {
-    return <div class="loader"></div>;
-  }
 
   return (
     <div className="HomePage">

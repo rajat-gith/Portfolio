@@ -1,0 +1,260 @@
+.HomeIntroComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  p {
+    font-size: 5vw;
+    font-family: var(--font);
+    font-weight: 200;
+    margin: 10px;
+    color: var(--darkFontColor);
+    span {
+      color: var(--borderColor);
+    }
+  }
+  .imageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 30%;
+      object-fit: contain;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    span {
+      font-family: var(--font);
+      font-size: 2em;
+      font-size: 3vw;
+      color: var(--darkFontColor);
+    }
+  }
+}
+.MenuComponent {
+  display: flex;
+  flex-direction: column;
+  .menuButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    #menuButton,
+    p {
+      padding: 10px;
+      font-family: var(--font);
+      font-size: 1.5vw;
+      border-radius: 20px;
+      color: var(--darkFontColor);
+      background: var(--darkBackground);
+      border: 2px solid var(--borderColor);
+      cursor: pointer;
+    }
+  }
+}
+.AboutComponent {
+  display: flex;
+  flex-direction: column;
+  .aboutContent {
+    font-size: 1.2vw;
+    color: var(--darkFontColor);
+    line-height: 1.8;
+  }
+  .highlights {
+    color: var(--borderColor);
+  }
+  .title {
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+    color: var(--borderColor);
+  }
+}
+.EducationComponent {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  .title {
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+    color: var(--darkFontColor);
+  }
+  p,
+  .matriculation,
+  .intermediate,
+  .btech {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .timeline {
+      font-size: 1.5vw;
+      color: var(--borderColor);
+      padding: 0;
+      margin: 0;
+      text-decoration: underline;
+    }
+    .educationDescription {
+      font-size: 1.2vw;
+      color: var(--darkFontColor);
+      .instiName {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+.ProjectComponent {
+  width: 100%;
+  .title {
+    font-size: 5vw;
+    padding: 0;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: var(--font);
+    color: var(--borderColor);
+  }
+  button {
+    color: var(--darkFontColor);
+    font-family: var(--font);
+    font-size: 1.5vw;
+    text-transform: none;
+  }
+  .project_container {
+    font-family: var(--font);
+    .project_card {
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+      .project_title {
+        font-size: 2vw;
+        margin: 0;
+        padding: 0;
+        color: var(--borderColor);
+      }
+      .project_desc {
+        color: var(--darkFontColor);
+        font-size: 1.2vw;
+      }
+      .project_icon,
+      .github_icon {
+        padding-right: 5px;
+        color: var(--borderColor);
+        font-size: 2vw;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.ExperienceComponent {
+  .title {
+    font-size: 5vw;
+    padding: 0;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: var(--font);
+    color: var(--borderColor);
+  }
+  .experiences {
+    display: flex;
+    .professional_experience,
+    .volunter_experience {
+      .experience_card {
+        .position_name {
+          color: var(--darkFontColor);
+          font-size: 2vw;
+          margin: 0;
+          padding: 0;
+        }
+        .org {
+          color: var(--borderColor);
+          font-size: 1.4vw;
+        }
+        .desc {
+          color: var(--darkFontColor);
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+  .HomeIntroComponent {
+    p {
+      font-size: 10vw;
+    }
+    .imageDiv {
+      img {
+        width: 70%;
+      }
+      span {
+        font-size: 5vw;
+      }
+    }
+  }
+
+  .AboutComponent {
+    .aboutContent {
+      font-size: 4vw;
+      line-height: 1.3;
+    }
+    .title {
+      font-size: 16vw;
+      color: var(--borderColor);
+    }
+  }
+
+  .EducationComponent {
+    .title {
+      font-size: 10vw;
+      color: var(--darkFontColor);
+    }
+    p,
+    .matriculation,
+    .intermediate,
+    .btech {
+      .timeline {
+        font-size: 4vw;
+      }
+      .educationDescription {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  .MenuComponent {
+    .menuButtons {
+      #menuButton,
+      p {
+        font-family: var(--font);
+        font-size: 4vw;
+      }
+    }
+  }
+
+  .ProjectComponent {
+    button {
+      font-size: 4vw;
+    }
+    .project_container {
+      .project_card {
+        .project_title {
+          font-size: 5vw;
+        }
+        .project_desc {
+          font-size: 4vw;
+        }
+        .project_icon,
+        .github_icon {
+          font-size: 8vw;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

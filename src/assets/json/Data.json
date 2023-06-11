@@ -1,0 +1,99 @@
+{
+  "web_projects": [
+    {
+      "name": "Shoppy : Ecommerce App",
+      "githubLink": "https://github.com/rajat-gith/Shoppy",
+      "hostedLink": "https://shoppyv1.vercel.app/#/",
+      "description": "Shoppy is a full-stack eCommerce app built with Django and React, featuring Django Rest Framework, JWT authentication, and PayPal API integration for payments.",
+      "Tech-Stack": "React,Django,Redux,Django Rest Framework"
+    },
+    {
+      "name": "Inventory Management System",
+      "githubLink": "https://github.com/rajat-gith/IMS_Frontend",
+      "hostedLink": "https://ims-v1.vercel.app/",
+      "description": "Built inventory management system using Django, React, Redux with JWT authentication, filtering, searching, and seamless back-end and front-end integration.",
+      "Tech-Stack": "React,Django,Redux,Django Rest Framework"
+    },
+    {
+      "name": "College Robotics Club Website",
+      "githubLink": "https://github.com/rajat-gith/Robotics_Society_Frontend",
+      "hostedLink": "https://shoppyv1.vercel.app/#/",
+      "description": "Completely Responsive, MUI and Redux-powered website for the institution's robotics society, featuring DRF backend implementation. Official platform, all device-friendly.",
+      "Tech-Stack": "React,Django,MUI,Django Rest Framework"
+    },
+    {
+      "name": "Treasure Hunt",
+      "githubLink": "https://github.com/rajat-gith/treasure-hunt",
+      "hostedLink": "https://treasure-hunt-v1.netlify.app/",
+      "description": "This webapp assesses and quantifies user soft skills while providing a treasure hunt game with stages, puzzles, and clues. Admin site offers user overview.",
+      "Tech-Stack": "React,Firebase,MUI,Redux"
+    }
+  ],
+  "android_projects": [
+    {
+      "name": "Student-Management-App",
+      "githubLink": "https://github.com/rajat-gith/Student-Management-App",
+      "hostedLink": "",
+      "description": "The app utilizes Firebase to enable admin control over department info, notices, and interface, while allowing authenticated students access to notices, timetables, & dept details.",
+      "Tech-Stack": "Kotlin,XML,Firebase"
+    },
+    {
+      "name": "Blood-Donation App",
+      "githubLink": "https://github.com/rajat-gith/BloodDonationApp",
+      "hostedLink": "",
+      "description": "An inclusive blood donation app for donors and patients. Donors register their details, while patients access a list of available donors for easy communication.",
+      "Tech-Stack": "Kotlin,XML,Firebase"
+    },
+    {
+      "name": "Chat App",
+      "githubLink": "https://github.com/rajat-gith/ChatApp",
+      "hostedLink": "",
+      "description": "A Kotlin and XML-based chat application with Firebase integration, enabling users to create unique accounts, facilitating chat between any two users. Includes session management.",
+      "Tech-Stack": "Kotlin,XML,Firebase"
+    }
+  ],
+  "other_projects": [
+    {
+      "name": "Student-Management-App",
+      "githubLink": "https://github.com/rajat-gith/Student-Management-App",
+      "hostedLink": "",
+      "Tech-Stack": "Kotlin,XML,Firebase"
+    },
+    {
+      "name": "Blood-Donation App",
+      "githubLink": "https://github.com/rajat-gith/BloodDonationApp",
+      "hostedLink": "",
+      "Tech-Stack": "Kotlin,XML,Firebase"
+    },
+    {
+      "name": "Chat App",
+      "githubLink": "https://github.com/rajat-gith/ChatApp",
+      "hostedLink": "",
+      "Tech-Stack": "Kotlin,XML,Firebase"
+    }
+  ],
+  "prof_experience": [
+    {
+      "positon": "Summer Intern",
+      "company": "Elimtus Evaluations Pvt.Ltd",
+      "description": "Developing complete frontend and backend of Interview Platform A multi-user video conferencing platform,along with collaborative code editor functionalities and other relevant functionalities"
+    },
+    {
+      "positon": "Junior Backend Developer Intern",
+      "company": "Urbano InfoTech",
+      "description": "Experienced in backend development, specialized in Django Rest Framework APIs for various products. Committed to delivering high-quality and efficient solutions"
+    }
+  ],
+  "vol_experience": [
+    {
+      "positon": "Lead",
+      "company": "Google Developer Student Clubs",
+      "description": "Led bootcamps, seminars, hackathons, and programs like Android Study Jams and Google Cloud Career Practitioner. Focused on enhancing student learning and providing practical experience in technical domains."
+    },
+    {
+      "positon": "Member",
+      "company": "Robotics Society & Enigma The Coding Club",
+      "description": "Actively contributed to college projects and organized technical events like coding contests and Bot Making competitions in the university's official technical fest."
+    }
+  ]
+}

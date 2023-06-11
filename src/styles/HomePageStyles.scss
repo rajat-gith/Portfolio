@@ -1,0 +1,69 @@
+.HomePage {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--darkBackground);
+  align-items: center;
+  .resume {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    #resumeButton {
+      padding: 10px;
+      font-family: var(--font);
+      font-size: 1.5vw;
+      border-radius: 20px;
+      color: var(--darkFontColor);
+      background: var(--darkBackground);
+      border: 2px solid var(--borderColor);
+      cursor: pointer;
+    }
+  }
+
+  .menu {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+  }
+  #LandingSection {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #AboutSection {
+    display: flex;
+    width: 95%;
+    .AboutComponent {
+      width: 60%;
+    }
+  }
+
+  #ProjectSection {
+    width: 95%;
+  }
+
+  #ExperienceSection {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+  .HomePage {
+    .resume {
+      #resumeButton {
+        font-size: 4vw;
+      }
+    }
+
+    #AboutSection {
+      .AboutComponent {
+        width: 90%;
+      }
+    }
+  }
+}

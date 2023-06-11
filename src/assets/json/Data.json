@@ -54,22 +54,11 @@
   ],
   "other_projects": [
     {
-      "name": "Student-Management-App",
-      "githubLink": "https://github.com/rajat-gith/Student-Management-App",
+      "name": "ASJ-NGO APP",
+      "githubLink": "https://github.com/rajat-gith/ASJ_NGO_app-1",
       "hostedLink": "",
-      "Tech-Stack": "Kotlin,XML,Firebase"
-    },
-    {
-      "name": "Blood-Donation App",
-      "githubLink": "https://github.com/rajat-gith/BloodDonationApp",
-      "hostedLink": "",
-      "Tech-Stack": "Kotlin,XML,Firebase"
-    },
-    {
-      "name": "Chat App",
-      "githubLink": "https://github.com/rajat-gith/ChatApp",
-      "hostedLink": "",
-      "Tech-Stack": "Kotlin,XML,Firebase"
+      "description": "Built the entire Backend and contributed to frontend. The App asks users to register giving them options to log in as an Organizer or a Volunteer",
+      "Tech-Stack": "Kotlin,XML,Django Rest framwork"
     }
   ],
   "prof_experience": [

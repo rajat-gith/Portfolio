@@ -92,7 +92,37 @@ function ProjectComponent() {
               ))}
             </Grid>
           </TabPanel>
-          <TabPanel value="3">Item Three</TabPanel>
+          <TabPanel value="3">
+            <Grid container className="project_container" lg={12} spacing="12">
+              {projects.other_projects.map((key) => (
+                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                  <AnimationOnScroll animateIn="animate__zoomIn" duration={2}>
+                    <Card className="project_card">
+                      <p className="project_title">{key.name}</p>
+                      <p className="project_desc">{key.description}</p>
+                      {key.githubLink != "" ? (
+                        <GitHubIcon
+                          className="github_icon"
+                          onClick={() => {
+                            window.open(key.githubLink, "_blank");
+                          }}
+                        ></GitHubIcon>
+                      ) : null}
+
+                      {key.hostedLink != "" ? (
+                        <OpenInNewIcon
+                          className="project_icon"
+                          onClick={() => {
+                            window.open(key.hostedLink, "_blank");
+                          }}
+                        ></OpenInNewIcon>
+                      ) : null}
+                    </Card>
+                  </AnimationOnScroll>
+                </Grid>
+              ))}
+            </Grid>
+          </TabPanel>
         </TabContext>
       </Box>
     </div>

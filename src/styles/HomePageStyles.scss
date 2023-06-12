@@ -1,11 +1,16 @@
 .HomePage {
   display: flex;
   width: 100%;
+  height: 100%;
   flex-direction: column;
   background-color: var(--darkBackground);
   align-items: center;
 
-  
+  .loader {
+    position: absolute;
+    top: 40vh;
+  }
+
   .resume {
     position: fixed;
     top: 10px;

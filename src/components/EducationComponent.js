@@ -4,7 +4,7 @@ import "../styles/ComponentStyles.scss";
 function EducationComponent() {
   return (
     <div className="EducationComponent">
-      <p className="title">EDUCATION</p>
+      <p className="title">Education</p>
       <div className="btech">
         <p className="timeline">2020-Present</p>
         <p className="educationDescription">

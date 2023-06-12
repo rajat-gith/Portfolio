@@ -9,7 +9,7 @@ import "../styles/ComponentStyles.scss";
 function AboutComponent() {
   return (
     <div className="AboutComponent">
-      <p className="title">ABOUT</p>
+      <p className="title">About Me</p>
       <p className="aboutContent">
         Hey, I am Rajat Kumar Nayak based out of Bhubabaneswar,Odisha. <br />{" "}
         <br />I build

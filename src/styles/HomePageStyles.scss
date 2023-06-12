@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: var(--darkBackground);
   align-items: center;
+  justify-content: center;
 
   .loader {
     position: absolute;
@@ -44,22 +45,22 @@
 
   #AboutSection {
     display: flex;
-    width: 95%;
+    width:100%;
     .AboutComponent {
       width: 60%;
     }
   }
 
   #ProjectSection {
-    width: 95%;
+    width: 100%;
   }
 
   #ExperienceSection {
-    width: 90%;
+    width: 100%;
   }
 
   #ContactSection {
-    width: 90%;
+    width: 100%;
   }
 }
 

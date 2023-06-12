@@ -59,6 +59,7 @@
 .AboutComponent {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
   .aboutContent {
     font-size: 1.2vw;
     color: var(--darkFontColor);
@@ -127,6 +128,7 @@
 }
 .ProjectComponent {
   width: 100%;
+  align-items: center;
   .title {
     font-size: 10vw;
     padding: 0;
@@ -170,6 +172,9 @@
   }
 }
 .ExperienceComponent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   .title {
     font-size: 10vw;
     padding: 0;
@@ -398,7 +403,7 @@
           font-size: 10vw;
         }
       }
-  
+
       .copyright {
         display: flex;
         align-items: center;

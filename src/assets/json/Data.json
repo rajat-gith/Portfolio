@@ -63,6 +63,12 @@
   ],
   "prof_experience": [
     {
+      "positon": "Frontend Developer Intern",
+      "company": "Ig Drones Pvt.Ltd",
+      "description": "Working on the admin Dashboard of the company and team projects",
+      "timeline": "Aug 2023 - Present"
+    },
+    {
       "positon": "Summer Intern",
       "company": "Elimtus Evaluations Pvt.Ltd",
       "description": "Developing complete frontend and backend of Interview Platform A multi-user video conferencing platform,along with collaborative code editor functionalities and other relevant functionalities",

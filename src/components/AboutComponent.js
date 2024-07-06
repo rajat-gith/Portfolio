@@ -51,7 +51,7 @@ function AboutComponent() {
           srcset=""
         />
       </div>
-      <EducationComponent />
+      
     </div>
   );
 }

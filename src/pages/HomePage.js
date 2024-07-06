@@ -10,6 +10,7 @@ import ProjectComponent from "../components/ProjectComponent";
 import ExperienceComponent from "../components/ExperienceComponent";
 import ContactComponent from "../components/ContactComponent";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import EducationComponent from "../components/EducationComponent";
 
 function HomePage() {
   const [isLoading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ function HomePage() {
 
   const handleResumeButton = () => {
     window.open(
-      "https://drive.google.com/file/d/11QIq9PfuVHkIjuFq-dYtzmWCK62WC-IK/view?usp=sharing"
+      "https://drive.google.com/file/d/1uzwM6Yb9G5ZKKfvT_QiAAE6lRRsfpOq0/view?usp=sharing"
     );
   };
 
@@ -48,8 +49,15 @@ function HomePage() {
                 animate={{ scale: 1 }}
                 transition={{ duration: 1.2, type: "easein" }}
               >
-                <button id="resumeButton" onClick={handleResumeButton}>
+                <button class="resumeButton" onClick={handleResumeButton}>
                   Resume
+                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path
+                      clip-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
                 </button>
               </motion.div>
             ) : null}
@@ -70,6 +78,9 @@ function HomePage() {
           </div>
           <div id="AboutSection">
             <AboutComponent />
+          </div>
+          <div id="EducationSection">
+            <EducationComponent />
           </div>
           <div id="ProjectSection">
             <ProjectComponent />

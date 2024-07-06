@@ -1,66 +1,83 @@
 import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import WorkIcon from "@mui/icons-material/Work";
 import "../styles/ComponentStyles.scss";
-import data from "../assets/json/Data.json";
-import { AnimationOnScroll } from "react-animation-on-scroll";
-import "animate.css/animate.min.css";
-import { Card, Grid } from "@mui/material";
 
-function ExperienceComponent() {
+const Timeline = () => {
+  const experiences = [
+    {
+      positon: "Software Developer",
+      company: "NCompass Techstudio",
+      description:
+        "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+      timeline: "June 2024 - Present",
+    },
+    {
+      positon: "Software Developer Intern",
+      company: "NCompass Techstudio",
+      description:
+        "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+      timeline: "Jan 2024 - May 2024",
+    },
+    {
+      positon: "Frontend Developer Intern",
+      company: "Ig Drones Pvt.Ltd",
+      description:
+        "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+      timeline: "Aug 2023 - Nov 2023",
+    },
+    {
+      positon: "Summer Intern",
+      company: "Elimtus Evaluations Pvt.Ltd",
+      description:
+        "Developing complete frontend and backend of Interview Platform A multi-user video conferencing platform,along with collaborative code editor functionalities and other relevant functionalities",
+      timeline: "May 2023- June 2023",
+    },
+    {
+      positon: "Junior Backend Developer Intern",
+      company: "Urbano InfoTech",
+      description:
+        "Experienced in backend development, specialized in Django Rest Framework APIs for various products. Committed to delivering high-quality and efficient solutions",
+      timeline: "May 2022- June 2022",
+    },
+  ];
+
   return (
     <div className="ExperienceComponent">
       <p className="title">Experience</p>
-      <div className="experiences">
-        <Grid
-          container
-          className="professional_experience"
-          lg={12}
-          spacing="12"
-        >
-          {data.prof_experience.map((key) => (
-            <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-              <AnimationOnScroll animateIn="animate__zoomIn" duration={2}>
-                <Card className="experience_card">
-                  <p className="position_name">{key.positon}</p>
-                  <div className="orgDetails">
-                    <p className="org">{key.company}</p>
-                    <p className="duration">{key.timeline}</p>
-                  </div>
-                  <p className="desc">{key.description}</p>
-                </Card>
-              </AnimationOnScroll>
-            </Grid>
-          ))}
-        </Grid>
-        <div className="volunter_experience">
-          <p className="title">Volunteering ...</p>
-          <Grid
-            container
-            className="professional_experience"
-            lg={12}
-            spacing="12"
+      <VerticalTimeline>
+        {experiences.map((experience, index) => (
+          <VerticalTimelineElement
+            key={index}
+            className="vertical-timeline-element--work"
+            date={experience.timeline}
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
+            contentStyle={{
+              background: "rgba(255, 255, 255, 0.05)",
+              color: "#fff",
+            }}
           >
-            {data.vol_experience.map((key) => (
-              <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                <AnimationOnScroll
-                  animateIn="animate__zoomIn"
-                  duration={2}
-                >
-                  <Card className="experience_card">
-                    <p className="position_name">{key.positon}</p>
-                    <div className="orgDetails">
-                      <p className="org">{key.company}</p>
-                      <p className="duration">{key.timeline}</p>
-                    </div>
-                    <p className="desc">{key.description}</p>
-                  </Card>
-                </AnimationOnScroll>
-              </Grid>
-            ))}
-          </Grid>
-        </div>
-      </div>
+            <h3 className="vertical-timeline-element-title">
+              {experience.positon}
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              {experience.company}
+            </h4>
+            <p>{experience.description}</p>
+          </VerticalTimelineElement>
+        ))}
+      <VerticalTimelineElement
+        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+        icon={<WorkIcon />}
+      />
+      </VerticalTimeline>
     </div>
   );
-}
+};
 
-export default ExperienceComponent;
+export default Timeline;

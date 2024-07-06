@@ -4,20 +4,20 @@
       "name": "Shoppy : Ecommerce App",
       "githubLink": "https://github.com/rajat-gith/Shoppy",
       "hostedLink": "https://shoppyv1.vercel.app/#/",
-      "description": "Shoppy is a full-stack eCommerce app built with Django and React, featuring Django Rest Framework, JWT authentication, and PayPal API integration for payments.",
+      "description": "Shoppy is a full-stack eCommerce app built with Django and React, featuring Django Rest Framework for RESTful APIs, JWT authentication, and PayPal API integration for payments.",
       "Tech-Stack": "React,Django,Redux,Django Rest Framework"
     },
     {
-      "name": "Inventory Management System",
+      "name": "Inventory Mgmt System",
       "githubLink": "https://github.com/rajat-gith/IMS_Frontend",
       "hostedLink": "https://ims-v1.vercel.app/",
       "description": "Built inventory management system using Django, React, Redux with JWT authentication, filtering, searching, and seamless back-end and front-end integration.",
-      "Tech-Stack": "React,Django,Redux,Django Rest Framework"
+      "Tech-Stack": "React,Redux,Django Rest Framework"
     },
     {
       "name": "College Robotics Club Website",
       "githubLink": "https://github.com/rajat-gith/Robotics_Society_Frontend",
-      "hostedLink": "https://shoppyv1.vercel.app/#/",
+      "hostedLink": "https://vssutroboticssociety.com/",
       "description": "Completely Responsive, MUI and Redux-powered website for the institution's robotics society, featuring DRF backend implementation. Official platform, all device-friendly.",
       "Tech-Stack": "React,Django,MUI,Django Rest Framework"
     },
@@ -63,10 +63,22 @@
   ],
   "prof_experience": [
     {
+      "positon": "Software Developer",
+      "company": "NCompass Techstudio",
+      "description": "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+      "timeline": "June 2024 - Present"
+    },
+    {
+      "positon": "Software Developer Intern",
+      "company": "NCompass Techstudio",
+      "description": "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+      "timeline": "Jan 2024 - May 2024"
+    },
+    {
       "positon": "Frontend Developer Intern",
       "company": "Ig Drones Pvt.Ltd",
-      "description": "Working on the admin Dashboard of the company and team projects",
-      "timeline": "Aug 2023 - Present"
+      "description": "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+      "timeline": "Aug 2023 - Nov 2023"
     },
     {
       "positon": "Summer Intern",

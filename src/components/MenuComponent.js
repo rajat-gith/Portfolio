@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../styles/ComponentStyles.scss";
 import { motion } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
@@ -11,12 +11,19 @@ function MenuComponent() {
       {menuCollapse ? (
         <motion.div className="menuButtons">
           <button
-            id="menuButton"
+            className="menuButton"
             onClick={(e) => {
               setMenuCollapse(false);
             }}
           >
             Menu
+            <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+              <path
+                clipRule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fillRule="evenodd"
+              ></path>
+            </svg>
           </button>
         </motion.div>
       ) : (
@@ -31,23 +38,68 @@ function MenuComponent() {
           </button>
 
           <Link to="/#LandingSection">
-            <p>Home</p>
+            <button>
+              Home
+              <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </Link>
 
           <Link to="/#AboutSection">
-            <p>About</p>
+            <button>
+              About
+              <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </Link>
 
           <Link to="/#ProjectSection">
-            <p>Projects</p>
+            <button>
+              Projects
+              <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </Link>
 
           <Link to="/#ExperienceSection">
-            <p>Experience</p>
+            <button>
+              Experience
+              <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </Link>
 
           <Link to="/#ContactSection">
-            <p>Let's Talk</p>
+            <button>
+              Let's Talk
+              <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </Link>
         </div>
       )}

@@ -50,6 +50,10 @@ const AppContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 600px) {
+    width: 90vw;
+    height: 50vh;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -75,6 +79,9 @@ const Line = styled.div`
     display: flex;
     justify-content: center;
   }
+  @media (max-width: 600px) {
+    height: 20vw;
+  }
 `;
 
 const Text = styled(motion.div)`
@@ -90,11 +97,11 @@ const Text = styled(motion.div)`
   }
 
   @media (max-width: 600px) {
-    font-size: 10vw;
-    line-height: 10vw;
+    font-size: 13vw;
+    line-height: 13vw;
 
     span {
-      font-size: 10vw;
+      font-size: 13vw;
     }
   }
 `;

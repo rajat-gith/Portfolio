@@ -3,14 +3,12 @@
 }
 .BlogPage {
   display: flex;
-  width: 100%;
+  // width: 100%;
   flex-direction: column;
   justify-content: center;
-
   .BlogComponent {
-    width: 90%;
-    margin: 0 auto;
-    align-items: center;
+    width: inherit;
+    padding: 10px;
     .home_button {
       padding: 8px 12px;
       color: var(--borderColor);
@@ -45,7 +43,7 @@
       font-family: var(--font);
 
       .blog_card {
-        width: 100%;
+        width: 90%;
         padding: 10px;
         background: rgba(255, 255, 255, 0.05);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);

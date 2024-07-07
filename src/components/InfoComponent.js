@@ -80,7 +80,7 @@ const Line = styled.div`
     justify-content: center;
   }
   @media (max-width: 600px) {
-    height: 20vw;
+    height: 13vw;
   }
 `;
 

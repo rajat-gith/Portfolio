@@ -3,12 +3,14 @@
 }
 .BlogPage {
   display: flex;
-  // width: 100%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
+
   .BlogComponent {
-    width: inherit;
-    padding: 10px;
+    width: 100%;
+    // padding: 10px;
+
     .home_button {
       padding: 8px 12px;
       color: var(--borderColor);
@@ -28,6 +30,7 @@
       background-color: var(--borderColor);
       color: #fff;
     }
+
     .title {
       font-size: 7vw;
       padding-bottom: 10px;
@@ -41,9 +44,11 @@
 
     .blog_container {
       font-family: var(--font);
+      width: 100%;
+      padding: 0 5%;
 
       .blog_card {
-        width: 90%;
+        width: 100%;
         padding: 10px;
         background: rgba(255, 255, 255, 0.05);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -102,24 +107,36 @@
     }
 
     @media only screen and (max-width: 768px) {
+      padding: 10px 5%;
+      .home_button {
+        font-size: 5vw;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+
       .blog_container {
+        padding: 0;
+
         .blog_card {
+          width: 100%;
+
           .blog_title {
-            font-size: 4vw; /* Adjust font size for smaller screens */
+            font-size: 4vw;
           }
 
           .blog_desc {
-            font-size: 3vw; /* Adjust font size for smaller screens */
+            font-size: 3vw;
           }
 
           .read_button {
-            font-size: 2vw; /* Adjust font size for smaller screens */
+            font-size: 2vw;
           }
         }
       }
     }
   }
 }
+
 .HomeIntroComponent {
   display: flex;
   flex-direction: column;

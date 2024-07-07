@@ -51,14 +51,6 @@ function BlogPage() {
             {posts.map((post) => (
               <Grid item xs={12} sm={6} md={4} lg={3} key={post.id}>
                 <Card className="blog_card">
-                  {post.cover_image && (
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image={post.cover_image}
-                      alt={post.title}
-                    />
-                  )}
                   <Typography
                     className="blog_title"
                     variant="h5"

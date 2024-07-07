@@ -88,4 +88,13 @@ const Text = styled(motion.div)`
     color: rgb(150, 149, 149);
     font-size: 8vw;
   }
+
+  @media (max-width: 600px) {
+    font-size: 10vw;
+    line-height: 10vw;
+
+    span {
+      font-size: 10vw;
+    }
+  }
 `;

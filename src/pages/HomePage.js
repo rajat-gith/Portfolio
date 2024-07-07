@@ -31,69 +31,58 @@ function HomePage() {
 
   return (
     <div className="HomePage">
-      {isLoading ? (
-        <ClimbingBoxLoader
-          color={"#ff7b00"}
-          loading={isLoading}
-          size={20}
-          className="loader"
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      ) : (
-        <div>
-          <div className="resume">
-            {startShow ? (
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 1.2, type: "easein" }}
-              >
-                <button class="resumeButton" onClick={handleResumeButton}>
-                  Resume
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                    <path
-                      clip-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </motion.div>
-            ) : null}
-          </div>
-          <div className="menu">
-            {startShow ? (
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 1, type: "easein" }}
-              >
-                <MenuComponent />
-              </motion.div>
-            ) : null}
-          </div>
-          <div id="LandingSection">
-            <HomeIntroComponent />
-          </div>
-          <div id="AboutSection">
-            <AboutComponent />
-          </div>
-          <div id="EducationSection">
-            <EducationComponent />
-          </div>
-          <div id="ProjectSection">
-            <ProjectComponent />
-          </div>
-          <div id="ExperienceSection">
-            <ExperienceComponent />
-          </div>
-
-          <div id="ContactSection">
-            <ContactComponent />
-          </div>
+      <div>
+        <div className="resume">
+          {startShow ? (
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1.2, type: "easein" }}
+            >
+              <button class="resumeButton" onClick={handleResumeButton}>
+                Resume
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </motion.div>
+          ) : null}
         </div>
-      )}
+        <div className="menu">
+          {startShow ? (
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1, type: "easein" }}
+            >
+              <MenuComponent />
+            </motion.div>
+          ) : null}
+        </div>
+        <div id="LandingSection">
+          <HomeIntroComponent />
+        </div>
+        <div id="AboutSection">
+          <AboutComponent />
+        </div>
+        <div id="EducationSection">
+          <EducationComponent />
+        </div>
+        <div id="ProjectSection">
+          <ProjectComponent />
+        </div>
+        <div id="ExperienceSection">
+          <ExperienceComponent />
+        </div>
+
+        <div id="ContactSection">
+          <ContactComponent />
+        </div>
+      </div>
     </div>
   );
 }

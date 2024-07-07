@@ -13,28 +13,28 @@ const Timeline = () => {
       positon: "Software Developer",
       company: "NCompass Techstudio",
       description:
-        "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+        "Working Data Engineering Domain focusing on building ETL pipelines and converting business usecasses into data to improve performance.",
       timeline: "June 2024 - Present",
     },
     {
       positon: "Software Developer Intern",
       company: "NCompass Techstudio",
       description:
-        "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+        "Designed and executed robust proof-of-concept solutions for public Q&A platforms and project management systems, enhancing user engagement by 40%.Implemented Redis Cache, compression, and query optimization techniques to boost performance by 50% in application development.",
       timeline: "Jan 2024 - May 2024",
     },
     {
       positon: "Frontend Developer Intern",
       company: "Ig Drones Pvt.Ltd",
       description:
-        "Working on the admin Dashboard of the company and team projects to make the UI more intuitive and increase the customer experience quality",
+        "Collaborated with cross-functional teams to revamp the front-end of the admin dashboard (IGOne Project), leveraging cutting-edge development techniques resulting in a 30% increase in user engagement.",
       timeline: "Aug 2023 - Nov 2023",
     },
     {
       positon: "Summer Intern",
       company: "Elimtus Evaluations Pvt.Ltd",
       description:
-        "Developing complete frontend and backend of Interview Platform A multi-user video conferencing platform,along with collaborative code editor functionalities and other relevant functionalities",
+        "Deployed a multi-user video conferencing system to enable real-time interviews. Integrated chat functionality, Collaborative Code Editor, and screen sharing capabilities. Improved performance by 50% through the adoption of Media Server for SFU Architecture, using Amazon Web Services (AWS) as the app' host. Tech stack: Development of MERN Stack",
       timeline: "May 2023- June 2023",
     },
     {
@@ -71,10 +71,10 @@ const Timeline = () => {
             <p>{experience.description}</p>
           </VerticalTimelineElement>
         ))}
-      <VerticalTimelineElement
-        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-        icon={<WorkIcon />}
-      />
+        <VerticalTimelineElement
+          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+          icon={<WorkIcon />}
+        />
       </VerticalTimeline>
     </div>
   );

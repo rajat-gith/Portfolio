@@ -1,4 +1,20 @@
 {
+  "data_projects": [
+    {
+      "name": "Stock-market-analysis",
+      "githubLink": "https://github.com/rajat-gith/stock-market-analysis",
+      "hostedLink": "https://github.com/rajat-gith/stock-market-analysis",
+      "description": "Implement sentiment analysis on YT comments using Kafka for streaming, the YT API for fetching data, Pandas for transformation, Matplotlib for visualization, and TextBlob for sentiment analysis.",
+      "Tech-Stack": "Kafka,Pandas,Python"
+    },
+    {
+      "name": "YT Cmt Sentiment Analysis",
+      "githubLink": "https://github.com/rajat-gith/yt-comments-sentiment-analysis",
+      "hostedLink": "https://github.com/rajat-gith/yt-comments-sentiment-analysis",
+      "description": "Implement Kafka for real-time streaming, and utilize Pandas for data structuring to simulate real-time stock variation trends of a particular brand.",
+      "Tech-Stack": "Kafka,Pandas,Python"
+    }
+  ],
   "web_projects": [
     {
       "name": "Shoppy : Ecommerce App",

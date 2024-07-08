@@ -27,14 +27,15 @@ function ProjectComponent() {
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="Web" value="1" />
-              <Tab label="Android" value="2" />
-              <Tab label="Miscallaenous" value="3" />
+              <Tab label="Data Engg" value="1" />
+              <Tab label="Web" value="2" />
+              <Tab label="Android" value="3" />
+              <Tab label="Miscallaenous" value="4" />
             </TabList>
           </Box>
           <TabPanel value="1">
             <Grid container className="project_container" lg={12} spacing="12">
-              {projects.web_projects.map((key) => (
+              {projects.data_projects.map((key) => (
                 <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
                   <AnimationOnScroll animateIn="animate__zoomIn" duration={2}>
                     <Card className="project_card">
@@ -65,8 +66,39 @@ function ProjectComponent() {
           </TabPanel>
           <TabPanel value="2">
             <Grid container className="project_container" lg={12} spacing="12">
+              {projects.web_projects.map((key) => (
+                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                  <AnimationOnScroll animateIn="animate__zoomIn" duration={2}>
+                    <Card className="project_card">
+                      <p className="project_title">{key.name}</p>
+                      <p className="project_desc">{key.description}</p>
+                      {key.githubLink != "" ? (
+                        <GitHubIcon
+                          className="github_icon"
+                          onClick={() => {
+                            window.open(key.githubLink, "_blank");
+                          }}
+                        ></GitHubIcon>
+                      ) : null}
+
+                      {key.hostedLink != "" ? (
+                        <OpenInNewIcon
+                          className="project_icon"
+                          onClick={() => {
+                            window.open(key.hostedLink, "_blank");
+                          }}
+                        ></OpenInNewIcon>
+                      ) : null}
+                    </Card>
+                  </AnimationOnScroll>
+                </Grid>
+              ))}
+            </Grid>
+          </TabPanel>
+          <TabPanel value="3">
+            <Grid container className="project_container" lg={12} spacing="12">
               {projects.android_projects.map((key) => (
-                <Grid item xs={12} sm={6} md={3} lg={3} xl={4}>
+                <Grid item xs={12} sm={6} md={3} lg={4} xl={4}>
                   <Card className="project_card">
                     <p className="project_title">{key.name}</p>
                     <p className="project_desc">{key.description}</p>
@@ -92,7 +124,7 @@ function ProjectComponent() {
               ))}
             </Grid>
           </TabPanel>
-          <TabPanel value="3">
+          <TabPanel value="4">
             <Grid container className="project_container" lg={12} spacing="12">
               {projects.other_projects.map((key) => (
                 <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>

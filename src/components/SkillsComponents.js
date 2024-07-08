@@ -96,6 +96,7 @@ export default function SkillComponent() {
     "Postgres",
     "Airflow",
     "Firebase",
+    "Kafka"
   ];
 
   const devOpsDesignAndTools = [

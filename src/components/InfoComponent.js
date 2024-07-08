@@ -20,17 +20,32 @@ function InfoComponent() {
     <AppContainer>
       <Wrapper>
         <Line className="singleLine">
-          <Text>
+          <Text
+            custom={0}
+            initial="hidden"
+            animate="visible"
+            variants={animationVariants}
+          >
             D<span>E</span>V<span>E</span>L<span>O</span>PER,
           </Text>
         </Line>
         <Line className="singleLine">
-          <Text>
+          <Text
+            custom={0}
+            initial="hidden"
+            animate="visible"
+            variants={animationVariants}
+          >
             D<span>E</span>SIG<span>N</span>ER,
           </Text>
         </Line>
         <Line className="singleLine">
-          <Text>
+          <Text
+            custom={0}
+            initial="hidden"
+            animate="visible"
+            variants={animationVariants}
+          >
             <span>R</span>EADER,
           </Text>
         </Line>

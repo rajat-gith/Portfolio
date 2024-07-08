@@ -1,9 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import Photo from "../assets/Photo.JPG";
 import "../styles/ComponentStyles.scss";
-import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
-import { AppContext } from "../context/AppContext";
 import { Link } from "react-router-dom";
 import InfoComponent from "./InfoComponent";
 

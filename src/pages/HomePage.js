@@ -4,13 +4,14 @@ import HomeIntroComponent from "../components/HomeIntroComponent";
 import MenuComponent from "../components/MenuComponent";
 import { motion } from "framer-motion";
 import { AppContext } from "../context/AppContext";
-import ThreeModel from "../components/ThreeModel";
 import AboutComponent from "../components/AboutComponent";
 import ProjectComponent from "../components/ProjectComponent";
 import ExperienceComponent from "../components/ExperienceComponent";
 import ContactComponent from "../components/ContactComponent";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import EducationComponent from "../components/EducationComponent";
+import SkillComponent from "../components/SkillsComponents";
+
 
 function HomePage() {
   const [isLoading, setLoading] = useState(false);
@@ -26,8 +27,6 @@ function HomePage() {
       "https://drive.google.com/file/d/1uzwM6Yb9G5ZKKfvT_QiAAE6lRRsfpOq0/view?usp=sharing"
     );
   };
-
-  const { startShow, setStart } = useContext(AppContext);
 
   return (
     <div className="HomePage">
@@ -54,17 +53,21 @@ function HomePage() {
         <div id="LandingSection">
           <HomeIntroComponent />
         </div>
+
         <div id="AboutSection">
           <AboutComponent />
         </div>
-        <div id="EducationSection">
-          <EducationComponent />
+        <div id="ExperienceSection">
+          <ExperienceComponent />
         </div>
         <div id="ProjectSection">
           <ProjectComponent />
         </div>
-        <div id="ExperienceSection">
-          <ExperienceComponent />
+        <div id="SkillsSection">
+          <SkillComponent />
+        </div>
+        <div id="EducationSection">
+          <EducationComponent />
         </div>
 
         <div id="ContactSection">

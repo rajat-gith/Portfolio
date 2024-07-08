@@ -530,6 +530,59 @@
   color: var(--darkFontColor);
   text-align: center;
 }
+
+.SkillComponent {
+  width: 100%;
+  align-items: center;
+
+  .title {
+    font-size: 7vw;
+    padding: 0;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-left: 10px;
+    font-family: var(--font);
+    color: var(--borderColor);
+    text-align: left;
+  }
+
+  button {
+    color: var(--darkFontColor);
+    font-family: var(--font);
+    font-size: 1.5vw;
+    text-transform: none;
+  }
+
+  .skills_container {
+    font-family: var(--font);
+
+    .skill_card {
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+      color: var(--borderColor);
+      font-size: 1.2vw;
+    }
+  }
+
+  // Mobile styles
+  @media (max-width: 600px) {
+    .title {
+      font-size: 10vw;
+    }
+    button {
+      font-size: 4vw;
+    }
+    .skills_container {
+      .skill_card {
+        font-size: 4vw;
+      }
+    }
+  }
+}
+
 .ProjectComponent {
   width: 100%;
   align-items: center;
@@ -655,7 +708,7 @@
       line-height: 1.3;
     }
     .title {
-      font-size: 16vw;
+      font-size: 10vw;
       color: var(--borderColor);
     }
     .SocialIcons {
@@ -673,7 +726,7 @@
   .EducationComponent {
     .title {
       font-size: 10vw;
-      color: var(--darkFontColor);
+      // color: var(--darkFontColor);
     }
     p,
     .matriculation,

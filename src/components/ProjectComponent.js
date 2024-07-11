@@ -12,6 +12,7 @@ import Box from "@mui/material/Box";
 import TabPanel from "@mui/lab/TabPanel";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
+import TextReveal from "./TextReveal";
 
 function ProjectComponent() {
   const [value, setValue] = React.useState("1");
@@ -22,7 +23,7 @@ function ProjectComponent() {
 
   return (
     <div className="ProjectComponent">
-      <p className="title">Projects</p>
+      <TextReveal text={"Projects"}></TextReveal>
       <Box sx={{ width: "100%", typography: "body1" }}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -30,7 +31,6 @@ function ProjectComponent() {
               <Tab label="Data Engg" value="1" />
               <Tab label="Web" value="2" />
               <Tab label="Android" value="3" />
-              <Tab label="Miscallaenous" value="4" />
             </TabList>
           </Box>
           <TabPanel value="1">
@@ -124,7 +124,7 @@ function ProjectComponent() {
               ))}
             </Grid>
           </TabPanel>
-          <TabPanel value="4">
+          {/* <TabPanel value="4">
             <Grid container className="project_container" lg={12} spacing="12">
               {projects.other_projects.map((key) => (
                 <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
@@ -154,7 +154,7 @@ function ProjectComponent() {
                 </Grid>
               ))}
             </Grid>
-          </TabPanel>
+          </TabPanel> */}
         </TabContext>
       </Box>
     </div>

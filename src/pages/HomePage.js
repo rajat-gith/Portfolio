@@ -2,8 +2,6 @@ import React, { useState, useEffect, useContext } from "react";
 import "../styles/HomePageStyles.scss";
 import HomeIntroComponent from "../components/HomeIntroComponent";
 import MenuComponent from "../components/MenuComponent";
-import { motion } from "framer-motion";
-import { AppContext } from "../context/AppContext";
 import AboutComponent from "../components/AboutComponent";
 import ProjectComponent from "../components/ProjectComponent";
 import ExperienceComponent from "../components/ExperienceComponent";
@@ -11,6 +9,7 @@ import ContactComponent from "../components/ContactComponent";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import EducationComponent from "../components/EducationComponent";
 import SkillComponent from "../components/SkillsComponents";
+import TextReveal from "../components/TextReveal";
 
 
 function HomePage() {
@@ -53,7 +52,7 @@ function HomePage() {
         <div id="LandingSection">
           <HomeIntroComponent />
         </div>
-
+      
         <div id="AboutSection">
           <AboutComponent />
         </div>

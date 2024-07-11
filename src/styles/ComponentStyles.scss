@@ -1,6 +1,17 @@
 * {
   text-decoration: none;
 }
+
+.title {
+  font-size: 7vw;
+  padding-bottom: 10px;
+  margin: 0;
+  cursor: default;
+  font-family: var(--font);
+  color: var(--borderColor);
+  text-align: left;
+  margin-bottom: 10px;
+}
 .BlogPage {
   display: flex;
   width: 100%;
@@ -398,37 +409,60 @@
 
 .AboutComponent {
   display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  .aboutContent {
-    font-size: 1.2vw;
-    color: var(--darkFontColor);
-    line-height: 1.8;
-  }
-  .highlights {
-    color: var(--borderColor);
-  }
-  .title {
-    font-size: 7vw;
-    padding: 0;
-    margin: 0;
-    font-family: var(--font);
-    color: var(--borderColor);
-    text-align: left;
-  }
-  .SocialIcons {
+  // 
+  height: 100vh;
+  width: 100%;
+  .dp_img {
     display: flex;
-    height: 50px;
-    padding-bottom: 10px;
-    .icon {
-      font-size: 50px;
-      padding-right: 20px;
-      cursor: pointer;
+    width: 50%;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 60%;
+      object-fit: contain;
+      // border-radius: 50%;
+      // background: #e0e0e0;
+      // box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    }
+  }
+  .info {
+    display: flex;
+    width: 50%;
+    padding-left: 10px;
+    justify-content: center;
+    flex-direction: column;
+    .aboutContent {
+      font-size: 1.2vw;
+      color: var(--darkFontColor);
+      line-height: 1.8;
+    }
+    .highlights {
       color: var(--borderColor);
     }
-    .leetCodeicon {
-      width: 45px;
-      object-fit: contain;
+    .title {
+      font-size: 7vw;
+      padding: 0;
+      margin: 0;
+      font-family: var(--font);
+      color: var(--borderColor);
+      text-align: left;
+    }
+    .SocialIcons {
+      display: flex;
+      height: 50px;
+      cursor: pointer;
+      padding-bottom: 10px;
+      .icon {
+        font-size: 50px;
+        padding-right: 20px;
+        cursor: pointer;
+        color: var(--borderColor);
+      }
+      .leetCodeicon {
+        width: 45px;
+        object-fit: contain;
+      }
     }
   }
 }
@@ -532,7 +566,7 @@
 }
 
 .SkillComponent {
-  width: 100%;
+  // width: 100%;
   align-items: center;
 
   .title {
@@ -633,6 +667,7 @@
 .ExperienceComponent,
 .EducationComponent {
   display: flex;
+
   flex-direction: column;
   padding: 10px;
   // background: red;

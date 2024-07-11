@@ -3,11 +3,12 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from '@mui/icons-material/School';
 import "../styles/ComponentStyles.scss";
+import TextReveal from "./TextReveal";
 
 const EducationComponent = () => {
   return (
     <div className="EducationComponent">
-      <p className="title">Education</p>
+     <TextReveal text={"Education"}></TextReveal>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"

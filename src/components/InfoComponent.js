@@ -46,7 +46,7 @@ function InfoComponent() {
             animate="visible"
             variants={animationVariants}
           >
-            <span>R</span>EADER,
+            <span>T</span>R<span>A</span>VELLER,
           </Text>
         </Line>
       </Wrapper>

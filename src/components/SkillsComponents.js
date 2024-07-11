@@ -7,6 +7,8 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "../styles/ComponentStyles.scss"; 
+import TextReveal from "./TextReveal";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -111,7 +113,7 @@ export default function SkillComponent() {
 
   return (
     <div className="SkillComponent">
-      <p className="title">Skills</p>
+      <TextReveal text={"Skills"}></TextReveal>
       <Box sx={{ width: "100%", typography: "body1" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs value={value} onChange={handleChange} aria-label="skills tabs">

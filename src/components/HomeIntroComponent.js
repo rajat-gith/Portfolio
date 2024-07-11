@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import Photo from "../assets/Photo.JPG";
 import "../styles/ComponentStyles.scss";
 import { Link } from "react-router-dom";
 import InfoComponent from "./InfoComponent";

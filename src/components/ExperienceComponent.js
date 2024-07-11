@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@mui/icons-material/Work";
 import "../styles/ComponentStyles.scss";
+import TextReveal from "./TextReveal";
 
 const Timeline = () => {
   const experiences = [
@@ -48,7 +49,7 @@ const Timeline = () => {
 
   return (
     <div className="ExperienceComponent">
-      <p className="title">Experience</p>
+      <TextReveal text={"Experience"}></TextReveal>
       <VerticalTimeline>
         {experiences.map((experience, index) => (
           <VerticalTimelineElement

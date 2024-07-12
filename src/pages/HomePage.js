@@ -11,6 +11,21 @@ import SkillComponent from "../components/SkillsComponents";
 
 function HomePage() {
   const [isLoading, setLoading] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -27,7 +42,7 @@ function HomePage() {
   return (
     <div className="HomePage">
       <div>
-        <div className="navbar">
+        <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
           <div className="resume">
             <div>
               <button class="resumeButton" onClick={handleResumeButton}>

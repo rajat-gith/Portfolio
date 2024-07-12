@@ -6,7 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import leetcodeIcon from "../assets/leetcode-custom.svg";
 import "../styles/ComponentStyles.scss";
 import TextReveal from "./TextReveal";
-import Photo from "../assets/Photo.png";
+import Photo from "../assets/Photo.webp";
 
 function AboutComponent() {
   return (

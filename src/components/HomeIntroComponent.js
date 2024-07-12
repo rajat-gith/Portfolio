@@ -7,7 +7,7 @@ function HomeIntroComponent() {
   return (
     <div className="HomeIntroComponent">
       <p>
-        Hii Its <span>Rajat</span>
+        Hii It's <span>Rajat</span>
       </p>
       <InfoComponent/>
       <Link to="/blogs">

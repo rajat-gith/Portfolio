@@ -78,7 +78,7 @@ export default function SkillComponent() {
     "Javascript",
     "Kotlin",
     "React",
-    "Django Rest Framework",
+    "DRF",
     "Node",
     "Express",
     "Flask",

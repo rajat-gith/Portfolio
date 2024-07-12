@@ -483,7 +483,7 @@
 
 .AboutComponent {
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   .dp_img {
     display: flex;
@@ -668,7 +668,7 @@
       backdrop-filter: blur(10px);
       border-radius: 8px;
       color: var(--borderColor);
-      font-size: 1.2vw;
+      font-size: 2vw;
     }
   }
 
@@ -794,7 +794,7 @@
   .AboutComponent {
     display: flex;
     flex-direction: column;
-    height: 160vh;
+    height: 100%;
     width: 100%;
     .dp_img {
       position: relative;
@@ -838,7 +838,7 @@
   .AboutComponent {
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    height: 100%;
     width: 100%;
     .dp_img {
       position: relative;
@@ -907,7 +907,7 @@
   .AboutComponent {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     .dp_img {
       position: relative;

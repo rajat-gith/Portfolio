@@ -18,11 +18,6 @@
   .BlogComponent {
     width: 100%;
     align-items: center;
-    // border: 1px solid green;
-
-    // align-items: center;
-    // padding: 10px;
-
     .home_button {
       padding: 8px 12px;
       color: var(--borderColor);
@@ -115,7 +110,6 @@
     }
 
     @media only screen and (max-width: 768px) {
-      // padding: 10px 5%;
       .home_button {
         font-size: 5vw;
         // margin: 0;
@@ -127,7 +121,6 @@
         justify-content: center;
 
         .blog_card {
-          // width: 90%;
           margin: 10px;
 
           .blog_title {
@@ -424,7 +417,9 @@
   .info {
     display: flex;
     width: 50%;
-    padding-left: 10px;
+    .aboutContent {
+      padding-left: 10px;
+    }
     justify-content: center;
     flex-direction: column;
     .aboutContent {
@@ -446,6 +441,7 @@
     .SocialIcons {
       display: flex;
       height: 50px;
+      padding-left: 10px;
       cursor: pointer;
       padding-bottom: 10px;
       .icon {
@@ -490,7 +486,6 @@
 .timeline-content {
   padding: 1.5rem;
   background: #1f1f1f;
-  // box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   border-radius: 6px;
   color: white;
   transition: 0.4s ease;
@@ -561,7 +556,6 @@
 }
 
 .SkillComponent {
-  // width: 100%;
   align-items: center;
 
   .title {
@@ -596,7 +590,6 @@
     }
   }
 
-  // Mobile styles
   @media (max-width: 600px) {
     .title {
       font-size: 10vw;
@@ -665,7 +658,6 @@
 
   flex-direction: column;
   padding: 10px;
-  // background: red;
   align-items: flex-start;
   .title {
     font-size: 7vw;
@@ -716,7 +708,47 @@
     }
   }
 }
-
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .AboutComponent {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    width: 100%;
+    .dp_img {
+      position: relative;
+      display: flex;
+      order: 1;
+      width: 100%;
+      img {
+        width: 80%;
+        object-fit: contain;
+      }
+    }
+    .info {
+      position: relative;
+      width: 100%;
+      order: 2;
+      .aboutContent {
+        font-size: 4vw;
+        line-height: 1.3;
+      }
+      .title {
+        font-size: 10vw;
+        color: var(--borderColor);
+      }
+      .SocialIcons {
+        height: 30px;
+        .icon {
+          font-size: 30px;
+        }
+        .leetCodeicon {
+          width: 25px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .AboutComponent {
     display: flex;
@@ -816,7 +848,6 @@
   .EducationComponent {
     .title {
       font-size: 10vw;
-      // color: var(--darkFontColor);
     }
     p,
     .matriculation,

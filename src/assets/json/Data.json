@@ -31,17 +31,17 @@
       "Tech-Stack": "React,Redux,Django Rest Framework"
     },
     {
-      "name": "College Robotics Club Website",
+      "name": "College Robotics Club",
       "githubLink": "https://github.com/rajat-gith/Robotics_Society_Frontend",
       "hostedLink": "https://vssutroboticssociety.com/",
       "description": "Completely Responsive, MUI and Redux-powered website for the institution's robotics society, featuring DRF backend implementation. Official platform, all device-friendly.",
       "Tech-Stack": "React,Django,MUI,Django Rest Framework"
     },
     {
-      "name": "Treasure Hunt",
-      "githubLink": "https://github.com/rajat-gith/treasure-hunt",
-      "hostedLink": "https://treasure-hunt-v1.netlify.app/",
-      "description": "This webapp assesses and quantifies user soft skills while providing a treasure hunt game with stages, puzzles, and clues. Admin site offers user overview.",
+      "name": "Food Receipe App",
+      "githubLink": "https://github.com/rajat-gith/food-app-backend",
+      "hostedLink": "https://food-receipe-app.vercel.app/",
+      "description": "A full-stack Food Recipe App for seamless recipe exploration, user engagement, and personalized profiles.Implemented advanced filtering and searching functionality, reducing recipe discovery time by 50%",
       "Tech-Stack": "React,Firebase,MUI,Redux"
     }
   ],

@@ -13,19 +13,21 @@
   margin-bottom: 10px;
 }
 .BlogPage {
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
 
   .BlogComponent {
     width: 100%;
+    align-items: center;
+    border: 1px solid green;
+
+    // align-items: center;
     // padding: 10px;
 
     .home_button {
       padding: 8px 12px;
       color: var(--borderColor);
       font-size: 1vw;
+      margin-left: 10px;
       cursor: pointer;
       align-self: flex-start;
       margin: 10px;
@@ -46,6 +48,7 @@
       font-size: 7vw;
       padding-bottom: 10px;
       margin: 0;
+      margin-left: 10px;
       cursor: default;
       font-family: var(--font);
       color: var(--borderColor);
@@ -55,18 +58,12 @@
 
     .blog_container {
       font-family: var(--font);
-      width: 100%;
-      padding: 0 5%;
-
       .blog_card {
-        width: 100%;
         padding: 10px;
         background: rgba(255, 255, 255, 0.05);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(10px);
         border-radius: 8px;
-        display: flex;
-        flex-direction: column;
 
         .published_date {
           color: var(--borderColor);
@@ -118,18 +115,20 @@
     }
 
     @media only screen and (max-width: 768px) {
-      padding: 10px 5%;
+      // padding: 10px 5%;
       .home_button {
         font-size: 5vw;
-        margin: 0;
+        // margin: 0;
         margin-bottom: 5px;
       }
 
       .blog_container {
         padding: 0;
+        justify-content: center;
 
         .blog_card {
-          width: 100%;
+          // width: 90%;
+          margin: 10px;
 
           .blog_title {
             font-size: 4vw;

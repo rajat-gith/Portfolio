@@ -26,7 +26,7 @@ const EducationComponent = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Veer Surendra Sai University of Technology, Burla
           </h4>
-          <p>Currently pursuing</p>
+          {/* <p>2020-2024</p> */}
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"

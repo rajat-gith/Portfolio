@@ -77,7 +77,6 @@ export default function SkillComponent() {
     "C++",
     "Javascript",
     "Kotlin",
-    "Android",
     "React",
     "Django Rest Framework",
     "Node",

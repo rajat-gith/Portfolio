@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {
-  Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Button,
-} from "@mui/material";
+import { Grid, Card, Typography, Button } from "@mui/material";
 import "../styles/ComponentStyles.scss";
 import MenuComponent from "../components/MenuComponent";
 
 function BlogPage() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
   const handleResumeButton = () => {
     window.open(
       "https://drive.google.com/file/d/1uzwM6Yb9G5ZKKfvT_QiAAE6lRRsfpOq0/view?usp=sharing"
@@ -41,12 +49,9 @@ function BlogPage() {
     });
   }, []);
 
-  console.log("Posts state", posts);
-
   return (
     <div className="BlogPage">
-      <div className="BlogComponent">
-        {loading && <Typography variant="h4">Loading posts...</Typography>}
+      <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="resume">
           <div>
             <button class="resumeButton" onClick={handleResumeButton}>
@@ -66,6 +71,9 @@ function BlogPage() {
             <MenuComponent />
           </div>
         </div>
+      </div>
+      <div className="BlogComponent">
+        {loading && <Typography variant="h4">Loading posts...</Typography>}
         <p className="title">Blogs</p>
         {!loading && (
           <Grid container className="blog_container" spacing={4}>

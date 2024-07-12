@@ -9,9 +9,14 @@ import {
   Button,
 } from "@mui/material";
 import "../styles/ComponentStyles.scss";
-import { Link } from "react-router-dom";
+import MenuComponent from "../components/MenuComponent";
 
 function BlogPage() {
+  const handleResumeButton = () => {
+    window.open(
+      "https://drive.google.com/file/d/1uzwM6Yb9G5ZKKfvT_QiAAE6lRRsfpOq0/view?usp=sharing"
+    );
+  };
   const getPosts = async () => {
     const DEV_TO_URL = "https://dev.to/api/articles";
 
@@ -42,9 +47,25 @@ function BlogPage() {
     <div className="BlogPage">
       <div className="BlogComponent">
         {loading && <Typography variant="h4">Loading posts...</Typography>}
-        <Link to="/">
-          <div className="home_button">Home</div>
-        </Link>
+        <div className="resume">
+          <div>
+            <button class="resumeButton" onClick={handleResumeButton}>
+              Resume
+              <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                <path
+                  clip-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div className="menu">
+          <div>
+            <MenuComponent />
+          </div>
+        </div>
         <p className="title">Blogs</p>
         {!loading && (
           <Grid container className="blog_container" spacing={4}>

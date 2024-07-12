@@ -6,10 +6,8 @@ import AboutComponent from "../components/AboutComponent";
 import ProjectComponent from "../components/ProjectComponent";
 import ExperienceComponent from "../components/ExperienceComponent";
 import ContactComponent from "../components/ContactComponent";
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import EducationComponent from "../components/EducationComponent";
 import SkillComponent from "../components/SkillsComponents";
-import TextReveal from "../components/TextReveal";
 
 
 function HomePage() {

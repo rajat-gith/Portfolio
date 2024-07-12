@@ -3,16 +3,16 @@
   font-family: var(--font);
 }
 
-.title {
-  font-size: 7vw;
-  padding-bottom: 10px;
-  margin: 0;
-  cursor: default;
-  font-family: var(--font);
-  color: var(--borderColor);
-  text-align: left;
-  margin-bottom: 10px;
-}
+// .title {
+//   font-size: 7vw;
+//   padding-bottom: 10px;
+//   margin: 0;
+//   cursor: default;
+//   font-family: var(--font);
+//   color: var(--borderColor);
+//   text-align: left;
+//   margin-bottom: 10px;
+// }
 .BlogPage {
   width: 100%;
   margin-top: 100px;
@@ -121,17 +121,17 @@
       color: #fff;
     }
 
-    .title {
-      font-size: 7vw;
-      padding-bottom: 10px;
-      margin: 0;
-      margin-left: 10px;
-      cursor: default;
-      font-family: var(--font);
-      color: var(--borderColor);
-      text-align: left;
-      margin-bottom: 10px;
-    }
+    // .title {
+    //   font-size: 7vw;
+    //   padding-bottom: 10px;
+    //   margin: 0;
+    //   margin-left: 10px;
+    //   cursor: default;
+    //   font-family: var(--font);
+    //   color: var(--borderColor);
+    //   text-align: left;
+    //   margin-bottom: 10px;
+    // }
 
     .blog_container {
       font-family: var(--font);
@@ -641,16 +641,16 @@
 .SkillComponent {
   align-items: center;
 
-  .title {
-    font-size: 7vw;
-    padding: 0;
-    padding-bottom: 10px;
-    margin: 0;
-    margin-left: 10px;
-    font-family: var(--font);
-    color: var(--borderColor);
-    text-align: left;
-  }
+  // .title {
+  //   font-size: 7vw;
+  //   padding: 0;
+  //   padding-bottom: 10px;
+  //   margin: 0;
+  //   margin-left: 10px;
+  //   font-family: var(--font);
+  //   color: var(--borderColor);
+  //   text-align: left;
+  // }
 
   button {
     color: var(--darkFontColor);
@@ -724,19 +724,8 @@
 .ExperienceComponent,
 .EducationComponent {
   display: flex;
-
   flex-direction: column;
-  padding: 10px;
   align-items: flex-start;
-  .title {
-    font-size: 7vw;
-    padding: 0;
-    padding-bottom: 10px;
-    margin: 0;
-    font-family: var(--font);
-    color: var(--borderColor);
-    text-align: left;
-  }
 }
 
 .ContactComponent {
@@ -1005,9 +994,9 @@
   }
 
   .EducationComponent {
-    .title {
-      font-size: 10vw;
-    }
+    // .title {
+    //   font-size: 10vw;
+    // }
     p,
     .matriculation,
     .intermediate,

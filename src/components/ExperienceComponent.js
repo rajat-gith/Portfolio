@@ -14,7 +14,7 @@ const Timeline = () => {
       positon: "Software Developer",
       company: "NCompass Techstudio",
       description:
-        "Working Data Engineering Domain focusing on building ETL pipelines and converting business usecasses into data to improve performance.",
+        "Working in Data Engineering Domain focusing on building ETL pipelines and converting business usecasses into data to improve performance.",
       timeline: "June 2024 - Present",
     },
     {

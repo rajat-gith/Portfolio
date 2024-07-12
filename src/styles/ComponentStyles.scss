@@ -1,5 +1,6 @@
 * {
   text-decoration: none;
+  font-family: var(--font);
 }
 
 .title {
@@ -668,21 +669,7 @@
       backdrop-filter: blur(10px);
       border-radius: 8px;
       color: var(--borderColor);
-      font-size: 2vw;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .title {
-      font-size: 10vw;
-    }
-    button {
-      font-size: 4vw;
-    }
-    .skills_container {
-      .skill_card {
-        font-size: 4vw;
-      }
+      font-size: 1.2vw;
     }
   }
 }
@@ -833,6 +820,26 @@
       }
     }
   }
+  .ProjectComponent {
+    button {
+      font-size: 4vw;
+    }
+    .project_container {
+      .project_card {
+        .project_title {
+          font-size: 2vw;
+        }
+        .project_desc {
+          font-size: 1.2vw;
+        }
+        .project_icon,
+        .github_icon {
+          font-size: 2vw;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .AboutComponent {
@@ -849,6 +856,26 @@
       img {
         width: 80%;
         object-fit: contain;
+      }
+    }
+    .ProjectComponent {
+      button {
+        font-size: 4vw;
+      }
+      .project_container {
+        .project_card {
+          .project_title {
+            font-size: 5vw;
+          }
+          .project_desc {
+            font-size: 6 vw;
+          }
+          .project_icon,
+          .github_icon {
+            font-size: 8vw;
+            cursor: pointer;
+          }
+        }
       }
     }
     .info {
@@ -877,6 +904,39 @@
   }
   .BlogPage {
     margin-top: 100px;
+  }
+  .ProjectComponent {
+    button {
+      font-size: 4vw;
+    }
+    .project_container {
+      .project_card {
+        .project_title {
+          font-size: 4vw;
+        }
+        .project_desc {
+          font-size: 2vw;
+        }
+        .project_icon,
+        .github_icon {
+          font-size: 5vw;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .SkillComponent {
+    .title {
+      font-size: 10vw;
+    }
+    button {
+      font-size: 4vw;
+    }
+    .skills_container {
+      .skill_card {
+        font-size: 4vw;
+      }
+    }
   }
 }
 @media only screen and (min-width: 250px) and (max-width: 480px) {
@@ -1039,6 +1099,19 @@
     }
   }
 
+  .SkillComponent {
+    .title {
+      font-size: 10vw;
+    }
+    button {
+      font-size: 4vw;
+    }
+    .skills_container {
+      .skill_card {
+        font-size: 4vw;
+      }
+    }
+  }
   .ContactComponent {
     .title {
       font-size: 20vw;

@@ -98,7 +98,7 @@ function ProjectComponent() {
           <TabPanel value="3">
             <Grid container className="project_container" lg={12} spacing="12">
               {projects.android_projects.map((key) => (
-                <Grid item xs={12} sm={6} md={3} lg={4} xl={4}>
+                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
                   <Card className="project_card">
                     <p className="project_title">{key.name}</p>
                     <p className="project_desc">{key.description}</p>

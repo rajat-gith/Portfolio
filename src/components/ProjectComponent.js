@@ -27,7 +27,7 @@ function ProjectComponent() {
       <Box sx={{ width: "100%", typography: "body1" }}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
+            <TabList onChange={handleChange}>
               <Tab label="Data Engg" value="1" />
               <Tab label="Web" value="2" />
               <Tab label="Android" value="3" />

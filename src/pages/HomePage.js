@@ -35,7 +35,7 @@ function HomePage() {
 
   const handleResumeButton = () => {
     window.open(
-      "https://drive.google.com/file/d/1uzwM6Yb9G5ZKKfvT_QiAAE6lRRsfpOq0/view?usp=sharing"
+      "https://drive.google.com/file/d/1cMcCiUOoQ_Uy5w4xRTKR0Ks2Q6J9x0i_/view?usp=sharing"
     );
   };
 

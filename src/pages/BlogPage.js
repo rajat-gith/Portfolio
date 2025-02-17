@@ -22,7 +22,7 @@ function BlogPage() {
   };
   const handleResumeButton = () => {
     window.open(
-      "https://drive.google.com/file/d/1cMcCiUOoQ_Uy5w4xRTKR0Ks2Q6J9x0i_/view?usp=sharing"
+      "https://drive.google.com/file/d/16QaicgGR1lFwK0CsFRym90LihyZUpyLp/view?usp=sharing"
     );
   };
   const getPosts = async () => {

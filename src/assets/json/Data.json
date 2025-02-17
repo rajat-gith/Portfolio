@@ -24,6 +24,13 @@
       "Tech-Stack": "React,Django,Redux,Django Rest Framework"
     },
     {
+      "name": "DB Dashboard",
+      "githubLink": "https://github.com/rajat-gith/gui-backend",
+      "hostedLink": "https://gui-frontend.vercel.app/",
+      "description": "Built a GUI for secure database connections and query execution, implemented JWT authentication for user sessions, and developed a FastAPI-based query recommendation script.",
+      "Tech-Stack": "React,MongoDB,Node,Flask,Python Scriptin"
+    },
+    {
       "name": "Inventory Mgmt System",
       "githubLink": "https://github.com/rajat-gith/IMS_Frontend",
       "hostedLink": "https://ims-v1.vercel.app/",
@@ -33,7 +40,7 @@
     {
       "name": "College Robotics Club",
       "githubLink": "https://github.com/rajat-gith/Robotics_Society_Frontend",
-      "hostedLink": "https://vssutroboticssociety.com/",
+      "hostedLink": "https://robotics-society-frontend-git-main-rajat-gith.vercel.app/",
       "description": "Completely Responsive, MUI and Redux-powered website for the institution's robotics society, featuring DRF backend implementation. Official platform, all device-friendly.",
       "Tech-Stack": "React,Django,MUI,Django Rest Framework"
     },

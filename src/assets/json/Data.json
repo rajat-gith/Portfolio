@@ -31,13 +31,6 @@
       "Tech-Stack": "React,MongoDB,Node,Flask,Python Scriptin"
     },
     {
-      "name": "Inventory Mgmt System",
-      "githubLink": "https://github.com/rajat-gith/IMS_Frontend",
-      "hostedLink": "https://ims-v1.vercel.app/",
-      "description": "Built inventory management system using Django, React, Redux with JWT authentication, filtering, searching, and seamless back-end and front-end integration.",
-      "Tech-Stack": "React,Redux,Django Rest Framework"
-    },
-    {
       "name": "College Robotics Club",
       "githubLink": "https://github.com/rajat-gith/Robotics_Society_Frontend",
       "hostedLink": "https://robotics-society-frontend-git-main-rajat-gith.vercel.app/",
@@ -50,6 +43,13 @@
       "hostedLink": "https://food-receipe-app.vercel.app/",
       "description": "A full-stack Food Recipe App for seamless recipe exploration, user engagement, and personalized profiles.Implemented advanced filtering and searching functionality, reducing recipe discovery time by 50%",
       "Tech-Stack": "React,Firebase,MUI,Redux"
+    },
+    {
+      "name": "Inventory Mgmt System",
+      "githubLink": "https://github.com/rajat-gith/IMS_Frontend",
+      "hostedLink": "https://ims-v1.vercel.app/",
+      "description": "Built inventory management system using Django, React, Redux with JWT authentication, filtering, searching, and seamless back-end and front-end integration.",
+      "Tech-Stack": "React,Redux,Django Rest Framework"
     }
   ],
   "android_projects": [
